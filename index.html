@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NATURE-PHOTOS ALBUM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="slider-box">
+          <div id="slider">
+            <img src="/img/img1.jpg" >
+            <img src="/img/img2.jpg">
+            <img src="/img/pixa3.jpg">
+            <img src="/img/pixa4.jpg">
+            <img src="/img/pixa5.jpg">
+            <img src="/img/pixa6.jpg">
+          </div>
+          <div class="indicators">
+             <span id="btn1"></span>
+             <span id="btn2"></span>
+             <span id="btn3"></span>
+             <span id="btn4"></span>
+             <span id="btn5"></span>
+             <span id="btn6"></span>
+          </div>
+    </div>
+    <script>
+        var slide = document.getElementById('slider');
+        var btn = document.getElementById('btn1');
+        var btn = document.getElementById('btn2');
+        var btn = document.getElementById('btn3');
+        var btn = document.getElementById('btn4');
+        var btn = document.getElementById('btn5');
+        var btn = document.getElementById('btn6');
+
+        btn1.onclick = function(){
+            slide.style.transform = "translateX(0px)";
+         };
+         btn2.onclick = function(){
+            slide.style.transform = "translateX(-100px)";
+         };
+         btn3.onclick = function(){
+            slide.style.transform = "translateX(-200px)";
+         };
+         btn4.onclick = function(){
+            slide.style.transform = "translateX(-300px)";
+         };
+         btn5.onclick = function(){
+            slide.style.transform = "translateX(-400px)";
+         };
+         btn6.onclick = function(){
+            slide.style.transform = "translateX(-500px)";
+         }
+    </script>
+</body>
+</html>
